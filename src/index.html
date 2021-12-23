@@ -16,10 +16,10 @@
   </head>
   <body>
     <form>
-      <input type="text" name="name" class="input" pattern="{20,}" required>
-      <input type="text" name="name-slug" class="input" pattern="/^[A-Za-z]+$/" required>
-      <input type="number" name="contributers" class="input" pattern="/^{1,100}+$/" >
-      <input type="number" name="branches" class="input" pattern="/^{1,100}+$/" >
+      <input type="text" name="name" class="input" minlength="20" required>
+      <input type="text" name="name_slug" class="input" pattern="/^[A-Za-z]+$/" required>
+      <input type="number" name="contributers" class="input" min="1" max="100" >
+      <input type="number" name="max_branches" class="input" min="1" max="100" >
     </form>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
